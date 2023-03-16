@@ -1,0 +1,58 @@
+<% layout('layouts/boilerplate')%>
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+  <div class="row flex-fill">
+    <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+      <div class="card shadow p-2">
+        <img src="" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Register</h5>
+          <form
+            action="/register"
+            method="POST"
+            class="validatedform"
+            novalidate
+          >
+            <div class="mb-3">
+              <label class="form-label" for="username">Username: </label>
+              <input
+                class="form-control"
+                type="text"
+                id="username"
+                name="username"
+                required
+              />
+              <div class="invalid-feedback">Username is required!</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email: </label>
+              <input
+                class="form-control"
+                type="text"
+                id="email"
+                name="email"
+                required
+              />
+              <div class="invalid-feedback">Email is required!</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="password">Password: </label>
+              <input
+                class="form-control"
+                type="password"
+                id="password"
+                name="password"
+                required
+              />
+              <div class="invalid-feedback">Password is required!</div>
+              <div class="valid-feedback">Looks good!</div>
+            </div>
+            <button class="btn btn-success col-12">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
